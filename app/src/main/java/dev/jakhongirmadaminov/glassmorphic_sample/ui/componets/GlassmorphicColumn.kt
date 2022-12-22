@@ -1,29 +1,14 @@
-package dev.jakhongirmadaminov.glassmorphiccomposables
+package dev.jakhongirmadaminov.glassmorphic_sample.ui.componets
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ColumnScope
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
-import androidx.compose.runtime.snapshots.SnapshotStateList
+import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.geometry.CornerRadius
-import androidx.compose.ui.geometry.Offset
-import androidx.compose.ui.geometry.Rect
-import androidx.compose.ui.geometry.RoundRect
-import androidx.compose.ui.geometry.Size
+import androidx.compose.ui.geometry.*
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.asAndroidBitmap
@@ -33,10 +18,11 @@ import androidx.compose.ui.graphics.drawscope.clipPath
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.layout.positionInParent
 import androidx.compose.ui.unit.dp
+import dev.jakhongirmadaminov.glassmorphic_sample.util.fastblur
 import kotlinx.collections.immutable.ImmutableList
 
 @Composable
-fun GlassmorphicColumn(
+fun GlassMorphicColumn(
     modifier: Modifier = Modifier,
     scrollState: ScrollState,
     childMeasures: ImmutableList<Place>,
@@ -102,7 +88,6 @@ fun GlassmorphicColumn(
         }
     }
 
-
     Box(modifier = modifier
         .fillMaxSize()
         .clickable(indication = null,
@@ -126,5 +111,4 @@ fun GlassmorphicColumn(
     ) {
         content()
     }
-
 }

@@ -1,4 +1,4 @@
-package dev.jakhongirmadaminov.glassmorphiccomposables
+package dev.jakhongirmadaminov.glassmorphic_sample.util
 
 import android.content.Context
 import android.graphics.Bitmap

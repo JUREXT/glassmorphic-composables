@@ -1,4 +1,4 @@
-package dev.jakhongirmadaminov.glassmorphiccomposables
+package dev.jakhongirmadaminov.glassmorphic_sample.ui.componets
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.ScrollState
@@ -32,6 +32,7 @@ import androidx.compose.ui.graphics.drawscope.clipPath
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.layout.positionInParent
 import androidx.compose.ui.unit.dp
+import dev.jakhongirmadaminov.glassmorphic_sample.util.fastblur
 import kotlinx.collections.immutable.ImmutableList
 
 
